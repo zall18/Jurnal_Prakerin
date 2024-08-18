@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/utama"
+        android:title="Utama"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/kehadiran"
+        android:title="Kehadiran"
+        android:icon="@drawable/baseline_fingerprint_24"
+        />
+
+    <item
+        android:id="@+id/kegiatan"
+        android:title="Kegiatan"
+        android:icon="@drawable/baseline_list_24"
+        />
+
+    <item
+        android:id="@+id/pengaturan"
+        android:title="Pengaturan"
+        android:icon="@drawable/baseline_settings_24"
+        />
+
+
+</menu>

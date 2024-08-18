@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".editProfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:id="@+id/back_profil"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@drawable/circle_profile"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:layout_marginVertical="30dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:shapeAppearanceOverlay="@style/circle_image"
+                android:id="@+id/image_siswa_edit"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:background="@drawable/rounded_corner"
+            android:padding="20dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/name_edit"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:background="@drawable/rounded_corner"
+            android:padding="20dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/email_edit"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="telepom"
+            android:background="@drawable/rounded_corner"
+            android:padding="20dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/telepon_edit"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="alamat"
+            android:background="@drawable/rounded_corner"
+            android:padding="20dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/alamat_edit"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/blue"
+            android:text="Change Image Profil"
+            android:textColor="@color/white"
+            android:id="@+id/edit_image_button"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/blue"
+            android:text="Simpan Perubahan"
+            android:textColor="@color/white"
+            android:id="@+id/edit_profile_button"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

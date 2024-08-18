@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_marginHorizontal="30dp"
+          >
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ypc1"
+                android:layout_marginTop="100dp"
+                  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:text="Jurnal Prakerin"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+                  android:textColor="@color/darkblue"
+                android:layout_marginBottom="60dp"
+                  />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:background="@drawable/rounded_corner"
+                  android:hint="Username"
+                  android:backgroundTint="@color/white"
+                  android:padding="18dp"
+                  android:id="@+id/username"
+                android:layout_marginTop="12dp"
+                  />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:hint="Password"
+                android:backgroundTint="@color/white"
+                android:padding="18dp"
+                android:id="@+id/password"
+                android:layout_marginTop="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:hint="Masuk"
+                  android:textColorHint="@color/white"
+                  android:background="@drawable/rounded_corner"
+                  android:backgroundTint="@color/blue"
+                  android:layout_marginTop="20dp"
+                  android:id="@+id/login_button"
+                  />
+
+      </LinearLayout>
+</RelativeLayout>
